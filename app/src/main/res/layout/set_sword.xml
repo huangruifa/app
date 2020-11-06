@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="375dp"
+    android:layout_height="667dp"
+    android:background="#F5F7FA"
+    tools:context=".SetSwordActivity">
+    <RelativeLayout
+        android:id="@+id/R_layout"
+        android:layout_width="375dp"
+        android:layout_height="44dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/text_view"
+            android:layout_marginLeft="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="〈"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="刀压刀速调整"
+            android:textSize="16sp"
+            android:textColor="#333333" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/L_layout"
+        android:layout_width="345dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/R_layout">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:text="刀压"
+                android:textSize="14sp"
+                android:textColor="#ADADB9" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="15dp"
+                android:text="档位调节"
+                android:textSize="14sp"
+                android:textColor="#121018"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="130dp"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="right"
+                android:src="@mipmap/btn_me_arrow_down"
+                />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:background="#3658E0" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F5F7FA" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:text="刀速"
+                android:textSize="14sp"
+                android:textColor="#ADADB9" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="15dp"
+                android:text="档位调节"
+                android:textSize="14sp"
+                android:textColor="#121018"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="130dp"
+                android:layout_marginTop="14dp"
+                android:layout_gravity="right"
+                android:src="@mipmap/btn_me_arrow_down"
+                />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:background="#3658E0"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="281dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="204dp"
+        android:backgroundTint="#3658E0"
+        android:text="切割测试"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/L_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

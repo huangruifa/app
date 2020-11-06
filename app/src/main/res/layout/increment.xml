@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="375dp"
+    android:layout_height="667dp"
+    android:background="#F5F7FA"
+    tools:context=".IncrementActivity">
+
+    <RelativeLayout
+        android:id="@+id/R_layout"
+        android:layout_width="375dp"
+        android:layout_height="44dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/text_view"
+            android:layout_marginLeft="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="〈"
+            android:textColor="#312D3E" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="增值次数"
+            android:textColor="#312D3E"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/L_layout"
+        android:layout_width="345dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/R_layout">
+
+        <EditText
+            android:layout_width="315dp"
+            android:layout_height="22dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"
+            android:background="@null"
+            android:hint="请输入编号"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="281dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="155dp"
+        android:backgroundTint="#3658E0"
+        android:text="确定"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/L_layout"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

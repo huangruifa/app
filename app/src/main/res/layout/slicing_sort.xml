@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="375dp"
+    android:layout_height="667dp"
+    android:background="#E7E9ED"
+    tools:context=".SlicingSortActivity">
+
+    <RelativeLayout
+        android:id="@+id/R_layout"
+        android:layout_width="375dp"
+        android:layout_height="44dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/text_view"
+            android:layout_marginLeft="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="〈"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="小米6"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/R_layout2"
+        android:layout_width="162dp"
+        android:layout_height="162dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="14dp"
+        android:background="#F5F7FA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/R_layout">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/test2" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="前膜"
+        android:textColor="#121018"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/R_layout2"
+        app:layout_constraintStart_toStartOf="@+id/R_layout2"
+        app:layout_constraintTop_toBottomOf="@+id/R_layout2" />
+
+    <RelativeLayout
+        android:id="@+id/R_layout3"
+        android:layout_width="162dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="15dp"
+        android:background="#F5F7FA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/R_layout">
+
+        <ImageView
+            android:id="@+id/image_view2"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/test9" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="背贴"
+        android:textColor="#121018"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/R_layout3"
+        app:layout_constraintStart_toStartOf="@+id/R_layout3"
+        app:layout_constraintTop_toBottomOf="@+id/R_layout3" />
+
+    <RelativeLayout
+        android:id="@+id/R_layout4"
+        android:layout_width="162dp"
+        android:layout_height="162dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="228dp"
+        android:background="#F5F7FA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/R_layout">
+
+        <ImageView
+            android:id="@+id/image_view3"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/test9" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="机壳"
+        android:textColor="#121018"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/R_layout4"
+        app:layout_constraintStart_toStartOf="@+id/R_layout4"
+        app:layout_constraintTop_toBottomOf="@+id/R_layout4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
