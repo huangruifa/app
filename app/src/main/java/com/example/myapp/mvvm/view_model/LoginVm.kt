@@ -21,7 +21,8 @@ class LoginVm: ViewModel() {
 
     fun doLogin() {
         if (account.isNullOrBlank() or pwd.isNullOrBlank()){
-                    loginBean.value =loginModel.loginFail()
+                    /*给LiveData赋值  ui会自动更新*/
+                    loginBean.value = LoginBean(1,"登陆失败")
         }
         else{
             Handler().postDelayed(object : Runnable {

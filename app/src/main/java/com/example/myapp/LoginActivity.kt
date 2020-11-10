@@ -24,10 +24,11 @@ class LoginActivity : AppCompatActivity() {
         vm = ViewModelProviders.of(this).get(LoginVm::class.java)
 
         btn_login.setOnClickListener {
-            vm.account = et_tel.text.toString().trim()
+            vm.account = et_account.text.toString().trim()
             vm.pwd = et_pwd.text.toString().trim()
             vm.doLogin()
         }
+//        observer:检测变化
         vm.loginBean.observe(this, object : Observer<LoginBean> {
             override fun onChanged(t: LoginBean) {
                 /*数据发生变化*/
